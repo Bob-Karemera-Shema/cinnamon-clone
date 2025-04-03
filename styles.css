@@ -11,6 +11,11 @@
     --white: #ffffff;
 }
 
+body {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .primary-button {
     background-color: var(--blue);
     color: white;
@@ -27,9 +32,7 @@
 }
 
 .navbar-container {
-    max-width: 1120px;
     width: 100%;
-    margin: 0 auto;
     padding: 16px 0;
     display: flex;
     align-items: center;
@@ -109,4 +112,54 @@
     top: 50%;
     left: calc(50% + 2px);
     transform: translate(-50%, -50%);
+}
+
+.hero {
+    margin: 100px 0 80px;
+}
+
+.hero-header {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.hero-description {
+    font-size: 20px;
+    font-weight: 500;
+    color: #666666;
+    max-width: 750px;
+    line-height: 1.3;
+    margin-bottom: 70px;
+}
+
+.third-parties-container {
+    display: flex;
+    gap: 80px;
+}
+
+.third-party {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 230px;
+}
+
+.third-party-logo {
+    height: 30px;
+    width: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.third-party-rating {
+    font-weight: 500;
+}
+
+.deloitte {
+    left: -33px;
+}
+
+.clutch {
+    left: -62px;
 }
