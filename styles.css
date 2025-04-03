@@ -11,7 +11,7 @@
     --white: #ffffff;
 }
 
-body {
+.container {
     max-width: 1120px;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@ body {
 .primary-button {
     background-color: var(--blue);
     color: white;
-    padding: 15px 25px;
+    padding: 12px 30px;
     border: 2px solid var(--blue);
     transition: color 0.5s ease-in-out, back-ground-color 0.2s ease;
     font-size: 18px;
@@ -33,10 +33,13 @@ body {
 
 .navbar-container {
     width: 100%;
-    padding: 16px 0;
+    padding: 16px 200px;
     display: flex;
     align-items: center;
     gap: 200px;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--white);
 }
 
 .navbar-image-container {
@@ -115,13 +118,14 @@ body {
 }
 
 .hero {
-    margin: 100px 0 80px;
+    padding: 200px 0 80px;
 }
 
 .hero-header {
     font-size: 80px;
     font-weight: 900;
     margin-bottom: 24px;
+    color: var(--black);
 }
 
 .hero-description {
@@ -302,4 +306,45 @@ body {
 .service-description {
     line-height: 1.7;
     font-weight: 500;
+}
+
+.discovery-section {
+    padding: 180px 200px;
+    background: url('./assets/images/noise.png');
+    background-position: top;
+    background-size: fill;
+    background-repeat: repeat;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 80px)/2));
+    gap: 80px;
+}
+
+.discovery-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.discovery-header {
+    font-size: 55px;
+    line-height: 1.3;
+}
+
+.discovery-paragraph {
+    font-weight: 500;
+    line-height: 1.7;
+    color: #dfdfdf;
+}
+
+.discovery-info>button {
+    width: fit-content;
 }
