@@ -363,3 +363,84 @@
 .partner-slider:nth-child(1) {
     margin-bottom: 60px;
 }
+
+.testimonial-section {
+    margin-bottom: 150px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 100px)/2));
+    gap: 100px;
+    /* position: relative; */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.testimonial-header {
+    font-size: 40px;
+    line-height: 56px;
+    color: var(--black);
+}
+
+.testimonial-description {
+    font-weight: 500;
+    color: #505050;
+    line-height: 1.7;
+}
+
+.witness {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.witness>img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.witness-details {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.witness-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.witness-position {
+    color: var(--black);
+    font-weight: 500;
+}
+
+.testimonial:nth-child(2) {
+    top: calc((100% * 2)/3);
+}
+
+.testimonial:nth-child(3) {
+    top: calc((100% * 1)/5);
+}
+
+.testimonial:nth-child(4) {
+    top: calc((100% * 3)/4);
+}
+
+.arrow-container {
+    margin-top: 400px;
+    display: flex;
+    gap: 40px;
+}
+
+.arrow-container>img {
+    width: 50px;
+    height: auto;
+}
