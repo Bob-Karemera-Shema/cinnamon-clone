@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --black: #222222;
+    --blue: #5135FF;
+    --white: #ffffff;
+}
+
+.primary-button {
+    background-color: var(--blue);
+    color: white;
+    padding: 15px 25px;
+    border: 2px solid var(--blue);
+    transition: color 0.5s ease-in-out, back-ground-color 0.2s ease;
+    font-size: 18px;
+}
+
+.primary-button:hover {
+    color: var(--blue);
+    background-color: var(--white);
+    font-weight: 500;
+}
+
+.navbar-container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.navbar-image-container {
+    height: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-image {
+    height: 20px;
+    width: auto;
+}
+
+.navbar-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: var(--blue);
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover::after {
+    background-color: var(--blue);
+}
+
+.buttons-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.play-button {
+    background-color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid var(--blue);
+    position: relative;
+}
+
+.play-button > span {
+    border-width: 10px 0 10px 15px;
+    border-style: solid;
+    border-color: var(--white) var(--white) var(--white) var(--blue);
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 2px);
+    transform: translate(-50%, -50%);
+}
