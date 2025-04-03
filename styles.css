@@ -163,3 +163,103 @@ body {
 .clutch {
     left: -62px;
 }
+
+.recent-work {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-bottom: 200px;
+}
+
+.project-container {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, calc((1120px - 120px)/2));
+    gap: 40px;
+    position: relative;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.purple {
+    background-color: rgb(78, 38, 128);
+}
+
+.purple:hover {
+    box-shadow: 0 0 40px 0px rgb(78, 38, 128);
+}
+
+.dark-green {
+    background-color: rgb(23, 70, 79);
+}
+
+.dark-green:hover {
+    box-shadow: 0 0 40px 0px rgb(23, 70, 79);
+}
+
+.light-blue {
+    background-color: rgb(14, 75, 146);
+}
+
+.light-blue:hover {
+    box-shadow: 0 0 40px 0px rgb(14, 75, 146);
+}
+
+.project-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.project-image-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    width: 100%;
+}
+
+.tags {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.project-header {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.client-review-container {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.client-image {
+    border-radius: 50%;
+}
+
+.client-review {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-text {
+    font-weight: 700;
+}
+
+.client-name {
+    font-weight: 500;
+}
