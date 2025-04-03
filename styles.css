@@ -348,3 +348,18 @@
 .discovery-info>button {
     width: fit-content;
 }
+
+.partners-section {
+    margin: 150px 0;
+    padding: 0 32px;
+}
+
+.partner-slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.partner-slider:nth-child(1) {
+    margin-bottom: 60px;
+}
