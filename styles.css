@@ -169,7 +169,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .project-container {
@@ -179,6 +179,7 @@ body {
     gap: 40px;
     position: relative;
     transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .purple {
@@ -261,5 +262,44 @@ body {
 }
 
 .client-name {
+    font-weight: 500;
+}
+
+.services {
+    margin-bottom: 150px;
+}
+
+.services-header {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 60px
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, calc((1120px - 300px)/3));
+    column-gap: 150px;
+    row-gap: 120px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.service-image {
+    width: 50px;
+    height: 50px;
+}
+
+.service-name {
+    font-size: 24px;
+    color: var(--black);
+}
+
+.service-description {
+    line-height: 1.7;
     font-weight: 500;
 }
