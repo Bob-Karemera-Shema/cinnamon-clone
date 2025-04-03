@@ -339,7 +339,8 @@
     line-height: 1.3;
 }
 
-.discovery-paragraph {
+.discovery-paragraph,
+.college-call-to-action {
     font-weight: 500;
     line-height: 1.7;
     color: #dfdfdf;
@@ -435,7 +436,7 @@
 }
 
 .arrow-container {
-    margin-top: 400px;
+    margin-top: 450px;
     display: flex;
     gap: 40px;
 }
@@ -443,4 +444,60 @@
 .arrow-container>img {
     width: 50px;
     height: auto;
+    cursor: pointer;
 }
+
+.College {
+    background: url('./assets/images/noise.png');
+    background-position: top;
+    background-size: fill;
+    background-repeat: repeat;
+    background-color: var(--black);
+    padding: 180px 200px;
+    color: var(--white);
+}
+
+.college-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+}
+
+.college-name{
+    font-size: 54px;
+    max-width: 350px;
+    line-height: 75px;
+}
+
+.college-call-to-action {
+    max-width: 450px;
+}
+
+.college-image-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.college-image {
+    width: 45%;
+    height: auto;
+}
+
+.college-image:nth-child(2),
+.college-image:nth-child(3) {
+    width: 50%;
+}
+
+.college-image {
+    width: 45%;
+    height: auto;
+}
+
+.sub-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
