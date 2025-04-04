@@ -522,5 +522,103 @@
 .agile-team {
     margin-top: 200px;
     margin-bottom: 150px;
+    position: relative;
 }
 
+.agile-team-info {
+    position: relative;
+    width: 470px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.agile-team-header {
+    font-size: 54px;
+    line-height: 72px;
+}
+
+.agile-team-paragraph {
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.agile-team-info>.primary-button {
+    width: fit-content;
+}
+
+.agile-team-grid {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.agile-team-image {
+    position: absolute;
+    width: 250px;
+    height: 250px
+}
+
+.agile-team-image:nth-child(1) {
+    top: 100px;
+    right: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(2) {
+    top: 380px;
+    right: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(3) {
+    top: 660px;
+    right: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(4) {
+    top: 225px;
+    right: 280px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(5) {
+    top: 505px;
+    right: 280px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(6) {
+    top: 785px;
+    right: 280px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(7) {
+    top: 460px;
+    right: 560px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(8) {
+    top: 740px;
+    right: 560px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.agile-team-image:nth-child(9) {
+    top: 800px;
+    right: 840px;
+    margin-left: 30px;
+}
